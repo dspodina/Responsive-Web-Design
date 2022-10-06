@@ -1,0 +1,51 @@
+body {
+    background-color: blue;
+} 
+@media only screen and (max-width: 300px) {
+    body {
+      background-color: yellow;
+      width: 100%;
+      display: block;
+    }
+    /* #medium, #large {
+        display: none;
+    } */
+}
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    body {
+        background-color: green;
+        display: flex;
+        flex-wrap: wrap;
+    }
+      /* #small, #large {
+        display: none;
+    } */
+    #small {
+        width: 65%;
+    }
+    #medium {
+        width: 35%;
+    }
+    #large {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: red;
+        display: flex;
+    }
+    #small {
+        width: 33%;
+    }
+    #medium {
+        width: 33%;
+    }
+    #large {
+        width: 33%;
+    }
+    /* #small, #medium {
+        display: none;
+    } */
+}
+
